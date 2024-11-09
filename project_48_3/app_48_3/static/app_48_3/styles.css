@@ -1,0 +1,233 @@
+/* General Styles */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.7;
+    margin: 0;
+    padding: 0;
+    color: #333333; /* Dark text for readability */
+    background-color: #f5f5f5; /* Light grey background */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    animation: fadeIn 1.5s ease-out;
+}
+
+/* Header */
+header {
+    background-color: #ffffff; /* White header */
+    color: #333; /* Dark text for header */
+    padding: 1rem 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: slideInTop 1s ease-out;
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 1rem;
+}
+
+header h1 {
+    font-size: 3em;
+    margin: 0;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #333; /* Dark color for text */
+}
+
+/* Navigation */
+nav {
+    margin-top: 1rem;
+}
+
+nav a {
+    color: #333; /* Dark links for better contrast */
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: 600;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #6b9bca; /* Blue on hover */
+}
+
+/* Main Content */
+main {
+    max-width: 1100px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    flex-grow: 1;
+}
+
+/* Section Styling */
+section {
+    background-color: #ffffff; /* White sections for clean design */
+    padding: 2rem;
+    margin-top: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 1s ease-out;
+}
+
+section h2 {
+    color: #75a6d6; /* Blue for section headings */
+    font-size: 2.5em;
+    font-weight: 600;
+    margin-top: 0;
+}
+
+section p {
+    font-size: 1.2em;
+    color: #555; /* Darker gray for text */
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul li {
+    font-size: 1.1em;
+    margin-bottom: 0.8rem;
+}
+
+ul li a {
+    color: #759dc5; /* Blue links */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+ul li a:hover {
+    color: #ff6347; /* Tomato red on hover */
+}
+
+/* Button for links */
+.button {
+    display: inline-block;
+    background-color: #6c9bcb; /* Blue button */
+    color: white;
+    text-decoration: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    margin-top: 1.5rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #ff6347; /* Tomato red on hover */
+}
+
+/* Footer */
+footer {
+    background-color: #333; /* Dark footer */
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 0.9em;
+    margin-top: 2rem;
+    animation: fadeInUp 1s ease-out;
+}
+
+/* Footer Link */
+footer a {
+    color: #1E90FF; /* Blue footer links */
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #ff6347; /* Tomato red on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        text-align: center;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .header-container {
+        padding: 0 1rem;
+    }
+
+    section {
+        padding: 1.5rem;
+    }
+
+    footer {
+        font-size: 0.8em;
+    }
+}
+
+/* Animations */
+
+/* Fade In Effect */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Fade In Up Effect */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Slide In from Top */
+@keyframes slideInTop {
+    0% {
+        transform: translateY(-50%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Slide In from Bottom */
+@keyframes slideInBottom {
+    0% {
+        transform: translateY(50%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Apply Animations to Specific Elements */
+.fade-in {
+    animation: fadeIn 1.5s ease-out;
+}
+
+.fade-in-up {
+    animation: fadeInUp 1s ease-out;
+}
+
+.slide-in-top {
+    animation: slideInTop 1s ease-out;
+}
+
+.slide-in-bottom {
+    animation: slideInBottom 1s ease-out;
+}

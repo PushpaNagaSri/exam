@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="{% static 'App_48_3/styles.css' %}">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>Contact Me</h1>
+            <nav>
+                <a href="{% url 'home' %}">Home</a>
+                <a href="{% url 'about' %}">About</a>
+                <a href="{% url 'contact' %}">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="contact-details">
+            <h2>Contact Information</h2>
+            <p>Email: <strong>pushpanagasrivangara@gmail.com</strong></p>
+            <p>Phone: <strong>9182355934</strong></p>
+        </section>
+    </main>
+
+
+
+    <footer>
+        <p>Thank you for visiting my page! You can also find me on <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>.</p>
+        <p>&copy; 2024 Pushpa Naga Sri. All rights reserved.</p>
+    </footer>
+</body>
+</html>
